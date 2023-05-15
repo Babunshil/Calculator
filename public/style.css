@@ -38,6 +38,7 @@ body {
   justify-content: flex-end;
   font-size: 30px;
   margin-bottom: 20px;
+  margin-left: 65px;
   color: #f8fafd;
   /* overflow-x: scroll; */
 }
