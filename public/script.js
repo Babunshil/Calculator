@@ -34,5 +34,13 @@ buttons.forEach((button)=>{
     else{
       liveDisplay.innerText += "";
     }
+
+    if(button.id == "clear"){
+      liveDisplay.innerText = "0";
+    }
+
+    if(button.id == "equal"){
+      liveDisplay.innerText = "";
+    }
   })
 })
