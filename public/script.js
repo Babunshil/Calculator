@@ -1,5 +1,6 @@
 const display = document.querySelector("#display");
 const buttons = document.querySelectorAll("button");
+const liveDisplay = document.querySelector("#liveDisplay");
 
 buttons.forEach((item) => {
   item.onclick = () => {
@@ -19,6 +20,19 @@ buttons.forEach((item) => {
     }
     else {
       display.innerText += item.id;
+      
     }
   };
 });
+
+buttons.forEach((button)=>{
+  liveDisplay.innerText = "0";
+  button.addEventListener("click", function(){
+    if(button.className == "btn-number"){
+      liveDisplay.innerText = eval(display.innerText);;
+    }
+    else{
+      liveDisplay.innerText += "";
+    }
+  })
+})
