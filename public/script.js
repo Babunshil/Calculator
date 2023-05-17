@@ -36,7 +36,8 @@ buttons.forEach((button)=>{
     }
 
     if(button.id == "clear"){
-      liveDisplay.innerText = "0";
+      liveDisplay.innerText = "Cleared";
+      setTimeout(() => (liveDisplay.innerText = ""), 2000);
     }
 
     if(button.id == "equal"){
